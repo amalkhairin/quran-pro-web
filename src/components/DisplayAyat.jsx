@@ -3,20 +3,20 @@ import React, { useEffect, useState } from 'react';
 
 function DisplayAyat({ surahName, ayat, tafsir }) {
 
-    const [displayedText, setDisplayedText] = useState('');
-    const [index, setIndex] = useState(0);
-    const speed = 100;
+    // const [displayedText, setDisplayedText] = useState('');
+    // const [index, setIndex] = useState(0);
+    // const speed = 100;
 
-    useEffect(() => {
-        if (index < ayat.teksIndonesia.length) {
-            const timeout = setTimeout(() => {
-                setDisplayedText((prev) => prev + ayat.teksIndonesia[index]);
-                setIndex((prev) => prev + 1);
-            }, speed);
+    // useEffect(() => {
+    //     if (index < ayat.teksIndonesia.length) {
+    //         const timeout = setTimeout(() => {
+    //             setDisplayedText((prev) => prev + ayat.teksIndonesia[index]);
+    //             setIndex((prev) => prev + 1);
+    //         }, speed);
 
-            return () => clearTimeout(timeout); // Membersihkan timeout saat komponen unmount atau teks berubah
-        }
-    }, [index, ayat.teksIndonesia, speed]);
+    //         return () => clearTimeout(timeout);
+    //     }
+    // }, [index, ayat.teksIndonesia, speed]);
 
     return (
         <div className='sm:w-3/4 bg-[#3C3E45] shadow-lg p-5 rounded-xl relative flex flex-col justify-center gap-5'>

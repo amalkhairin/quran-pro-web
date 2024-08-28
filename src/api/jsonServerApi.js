@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const jsonApi = axios.create({
   // baseURL: 'http://localhost:3001/',
-  baseURL: 'https://quran-pro-web.vercel.app/',
+  baseURL: 'https://json-server-db-five.vercel.app/',
   timeout: 5000,
 });
 

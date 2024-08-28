@@ -24,6 +24,9 @@ class RandomAyatClass extends Component {
         const tafsir = surah.tafsir;
         let randomIndexAyat = Math.round(Math.random() * (surah.ayat.length - 1));
         randomIndexAyat = Math.max(0, Math.min(randomIndexAyat, surah.ayat.length - 1));
+        // const surahAyatFormatted = surah.ayat[randomIndexAyat].teksIndonesia.split(' ');
+        // surah.ayat[randomIndexAyat].teksIndonesia = [...surahAyatFormatted];
+        // console.log(surah.ayat[randomIndexAyat]);
 
         this.setState({
             surahName: surah.namaLatin,
